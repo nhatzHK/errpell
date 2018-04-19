@@ -25,5 +25,4 @@ You can read RPL as __err-p-ell__ or __rant, pretend, learn__. Up to you buddy.
 ### Contact
 
 - email: errpell at pm dot me
-- gpg: 8F2A047E
-- gpg server: [https://pgp.mit.edu/](https://pgp.mit.edu/)
+- gpg: [8F2A0A7E](http://keys.gnupg.net/pks/lookup?op=vindex&fingerprint=on&search=0x29CA00168F2A047E)
