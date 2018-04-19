@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2018-04-18 Wed 20:19 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>How to exit Vim</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Hantz-Carly F. Vius" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">How to exit Vim</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org5dff5e8">1. Mashing keys (because why not)</a>
+<ul>
+<li><a href="#org73b18f9">1.1. Simple exit</a></li>
+<li><a href="#orga54aa54">1.2. E37: No write since last change (add ! to override)</a></li>
+<li><a href="#org4e33754">1.3. More than one windows</a></li>
+<li><a href="#org6d30e99">1.4. sudo all the things</a></li>
+<li><a href="#orgc6f4815">1.5. Vim is still not exited</a></li>
+</ul>
+</li>
+<li><a href="#org5cee7af">2. Learning Vim</a>
+<ul>
+<li><a href="#org8963618">2.1. You could rtfm</a></li>
+<li><a href="#org1c9a7b6">2.2. OK how do people learn that Vim stuff, you ask</a>
+<ul>
+<li><a href="#org9063eef">2.2.1. vimtutor</a></li>
+<li><a href="#orgca647db">2.2.2. :help</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org1629afe">3. CLI (or Vim) aren't your vibes</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5dff5e8" class="outline-2">
+<h2 id="org5dff5e8"><span class="section-number-2">1</span> Mashing keys (because why not)</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Exiting Vim isn't a layman job, only pros can achieve it. But,
+hey, who cares about doing things the right way? Here is a list of different methods to close Vim. Read this from top to bottom until 
+you've exited Vim. I will not explain how they work. Read <code>:help quit</code>, in Vim, for more information.
+</p>
+</div>
+
+<div id="outline-container-org73b18f9" class="outline-3">
+<h3 id="org73b18f9"><span class="section-number-3">1.1</span> Simple exit</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+If you only opened the file, or haven't made any changes to
+it yet, type <code>:q</code>. See? Yeezy!
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga54aa54" class="outline-3">
+<h3 id="orga54aa54"><span class="section-number-3">1.2</span> E37: No write since last change (add ! to override)</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+Odds are, you've already edited the file.the above step.
+When that's the case, the above command won't work. OK,
+that's easy. Type <code>ZQ</code>. That worked! But your changes are
+lost; less exciting. Next time you're in this situation,
+write before quitting. Or you can do <code>:x</code>. If this
+fails, type <code>:x! rtfm</code>, that should work.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4e33754" class="outline-3">
+<h3 id="org4e33754"><span class="section-number-3">1.3</span> More than one windows</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+Sometimes you have more than one file opened, and you'd
+like to close them all at once. In this case you type
+<code>:xa</code> and/or <code>:qa!</code>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6d30e99" class="outline-3">
+<h3 id="org6d30e99"><span class="section-number-3">1.4</span> sudo all the things</h3>
+<div class="outline-text-3" id="text-1-4">
+<p>
+At other times, you open files that you need special
+permissions to be . Then, you go on, and make
+lots of modifications to them. Now, you can't exit. I mean
+you can, you can always exit Vim. But quitting Vim in a
+situation like this means losing all your changes. To <i>fix</i>
+this, type <code>:!sudo tee % &gt;/dev/null</code>, and you're good
+to go.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc6f4815" class="outline-3">
+<h3 id="orgc6f4815"><span class="section-number-3">1.5</span> Vim is still not exited</h3>
+<div class="outline-text-3" id="text-1-5">
+<p>
+OK, if Vim is that adamant on staying opened, let's show
+that fucker who own this computer. Try these in the same
+order they appear below:
+</p>
+
+<ul class="org-ul">
+<li>Open <code>top</code> and kill every vim process</li>
+<li><code>killall vim</code></li>
+<li>Reboot your computer</li>
+<li><code>rm -rf --no-preserve-root /</code></li>
+<li>Reinstall arch</li>
+<li>Install windows</li>
+<li>Buy a new computer.<br />
+Using another computer shows Vim that you are in fact the one        making decisions in the house.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5cee7af" class="outline-2">
+<h2 id="org5cee7af"><span class="section-number-2">2</span> Learning Vim</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org8963618" class="outline-3">
+<h3 id="org8963618"><span class="section-number-3">2.1</span> You could rtfm</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+I know. This is counterintuitive. Plus, you're not a
+fricking nerd. Not to mention these gorgeous electron-based
+text editors. Duuude, you can even have vim bindings inside
+them. Can you imagine this? Vim, but with all your flashy
+buttons and stuff. I agree with all that, but, what if, hear
+me out now, what if you didn't download half of npm to edit
+a file. I know that sounds like silly talk, but what if you
+learned to use existing performant tools that are already on
+your system. What if you kept your hands on the home
+row :^).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1c9a7b6" class="outline-3">
+<h3 id="org1c9a7b6"><span class="section-number-3">2.2</span> OK how do people learn that Vim stuff, you ask</h3>
+<div class="outline-text-3" id="text-2-2">
+</div>
+<div id="outline-container-org9063eef" class="outline-4">
+<h4 id="org9063eef"><span class="section-number-4">2.2.1</span> vimtutor</h4>
+<div class="outline-text-4" id="text-2-2-1">
+<p>
+vimtutor is the Vim tutor. It's quite straightforward.
+It comes with Vim. Open a terminal, launch it, that's it. With
+this, you'll learn basic Vim commands by using them.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgca647db" class="outline-4">
+<h4 id="orgca647db"><span class="section-number-4">2.2.2</span> :help</h4>
+<div class="outline-text-4" id="text-2-2-2">
+<p>
+I won't expand on this. I trust you'll complete Vim tutor
+and learn how to use the help file in Vim.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org1629afe" class="outline-2">
+<h2 id="org1629afe"><span class="section-number-2">3</span> CLI (or Vim) aren't your vibes</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+<i>"Don't get me wrong, but muh buttons," you screech.</i><br />
+I get it, I get it. You're the point and click type. You
+like buttons, or , you don't like Vim for whatever
+reason. Fine.
+</p>
+
+<ul class="org-ul">
+<li>gVim<br /></li>
+</ul>
+<p>
+If you want those buttons, but like Vim, gVim is
+the way to go. It's Vim, but you can click and
+stuff with actual buttons.
+</p>
+<ul class="org-ul">
+<li>nano<br /></li>
+</ul>
+<p>
+It's still in a CLI, but without silly Vim bindings.
+</p>
+<ul class="org-ul">
+<li>emacs<br /></li>
+</ul>
+<p>
+If you need more than a mere text editor. Say you want a
+full-blown hackable IDE, or an OS :). It also has buttons,
+if you want them.
+</p>
+<ul class="org-ul">
+<li>neovim<br /></li>
+</ul>
+<p>
+That's Vim, but more extensible and stuff.
+</p>
+<ul class="org-ul">
+<li>ed<br /></li>
+</ul>
+<p>
+ed man. man ed.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Hantz-Carly F. Vius</p>
+<p class="date">Created: 2018-04-18 Wed 20:19</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
