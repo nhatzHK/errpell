@@ -78,20 +78,20 @@ I won't expand on this. I trust you'll complete Vim tutor and learn how to use t
 
 -   gVim
 
-        If you want those buttons but like Vim, gVim is the way to go. It's Vim, but you can click and stuff with actual buttons.
+If you want those buttons but like Vim, gVim is the way to go. It's Vim, but you can click and stuff with actual buttons.
 
 -   nano
 
-        It's still in a CLI, but without silly Vim bindings.
+It's still in a CLI, but without silly Vim bindings.
 
 -   emacs
 
-        If you need more than a mere text editor. Say you want a full-blown hackable IDE, or an OS :). It also has buttons, if you want them.
+If you need more than a mere text editor. Say you want a full-blown hackable IDE, or an OS :). It also has buttons, if you want them.
 
 -   neovim
 
-        This is Vim, but made by another developer with a new and clean codebase. It has a python api and cool exclusive plugins. It also maintains backwards compatibility with vim plugins.
+This is Vim, but made by another developer with a new and clean codebase. It has a python api and cool exclusive plugins. It also maintains backwards compatibility with vim plugins.
 
 -   ed
 
-        ed man. man ed.
+ ed man. man ed.
