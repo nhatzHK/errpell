@@ -17,7 +17,7 @@ I rant, and pretend to know stuff. Welcome to my Ted Talk.
 
 You can read RPL as __err-p-ell__ or __rant, pretend, learn__. Up to you buddy.
 
-### Social & C0ntact
+### Social & Contact
 
 - Gitlab: [Hantz V](https://gitlab.com/hantz)
 - GitHub: [nhatzHK](https://github.com/nhatzHK)
