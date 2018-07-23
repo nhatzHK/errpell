@@ -106,12 +106,12 @@ anything between 2.0 and the latest version available to you. Just don't use
 In a qml file you have the import statements at the top and below them a single
 top level qml component.
 ```qml
-    // file.qml
-    import QtQuick 2.9
-    
-    Rectangle {
-    // everything else goes here
-    }
+// file.qml
+import QtQuick 2.9
+
+Rectangle {
+// everything else goes here
+}
 ```
 The `Rectangle` is the most basic *visual* component of QtQuick. It's a
 rectangle with usual properties like, x, y, width, height, and also things
@@ -129,14 +129,14 @@ the file without trouble. In C++ you would declare a variable with `Rectangle
    rect(0, 0, 12, 12);` for a square of height 12 placed at position (0, 0). In
 QML you'd write the same as follows:
 ```qml
-    Rectangle {
-        id: square // no semicolons needed
-        x: 0, y: 0 // it's recommended to declare related properties on the same line
-        width: 12
-        height: width // you can use a property's value to initialize another one
-    
-        color: "lightblue"
-    }
+Rectangle {
+    id: square // no semicolons needed
+    x: 0, y: 0 // it's recommended to declare related properties on the same line
+    width: 12
+    height: width // you can use a property's value to initialize another one
+
+    color: "lightblue"
+}
 ```
 Some other properties that are available in a rectangle are `border`,
 `gradient`, `opacity`, `visible`, and much [more](https://doc.qt.io/qt-5/qml-qtquick-rectangle-members.html).
@@ -151,21 +151,21 @@ Although the `id` looks like one, it's [not a real property](https://doc.qt.io/q
 You can also nest elements. This is very useful when you want to create
 somewhat complex components, both in look and behaviour:
 ```qml
-    Rectangle {
-       id: square
-       ...
-       color: "lightblue"
-       Rectangle {
-           id: innerBox
-    
-           width: 6
-           height: width
-    
-           // x and y are relative to the parent's coordinates
-           // the inner box will ended up centered in its parent
-           x: 3, y: 3
-       }
-    }
+Rectangle {
+   id: square
+   ...
+   color: "lightblue"
+   Rectangle {
+       id: innerBox
+
+       width: 6
+       height: width
+
+       // x and y are relative to the parent's coordinates
+       // the inner box will ended up centered in its parent
+       x: 3, y: 3
+   }
+}
 
 ```
 <a id="org6b21b1b"></a>
@@ -176,17 +176,17 @@ When a component is nested inside another one, the child can access its
 parent's attributes through the `parent` attribute. The parent can access its
 children's through the `children` attribute, which is a list.
 ```qml
+Rectangle {
+    id: box
+    ...
+    radius: innerBox.height / 3 // access any item's properties through its id
     Rectangle {
-        id: box
+        id: innerBox
         ...
-        radius: innerBox.height / 3 // access any item's properties through its id
-        Rectangle {
-            id: innerBox
-            ...
-            // Qt.darker returns the color one shade darker than the one it receives as parameter
-            color: Qt.darker(parent.color) // access the parent's properties
-        }
+        // Qt.darker returns the color one shade darker than the one it receives as parameter
+        color: Qt.darker(parent.color) // access the parent's properties
     }
+}
 
 ```
 <a id="org3e524f8"></a>
@@ -206,18 +206,18 @@ height is appropriately updated, so the rectangle is always a square. With
 that in mind we can redefine our two rectangles to get even better
 reactivity and keep the inner box centered at all times.
 ```qml
-    Rectangle {
-       // nothing to change
-       Rectangle {
-           id: innerBox
-    
-           width: parent.width
-           height: width
-           x: (parent.width - width) / 2
-           y: (parent.height - height) / 2
-           ...
-       }
-    }
+Rectangle {
+   // nothing to change
+   Rectangle {
+       id: innerBox
+
+       width: parent.width
+       height: width
+       x: (parent.width - width) / 2
+       y: (parent.height - height) / 2
+       ...
+   }
+}
 ```
 
 <a id="org453cbe4"></a>
@@ -248,19 +248,19 @@ In the Qt framework, a signal is a predefined message an object sends when a
 certain event occurs. They are an indispensable functionality for any
 respectable gui framework, under some form or another.
 ```qml
-    signal eventOccured // signal declaration
-    
-    // signal handling
-    onEventOccured : {
-        width = width * 2
-    }
-    
-    signal buttonClicked(Position clickPosition) // note that signals can also take parameters
-    
-    onButtonClicked : {
-        // oh no. Is this a javascript
-        console.log("x: " + clickPosition.x + " y: " + clickPosition.y)
-    }
+signal eventOccured // signal declaration
+
+// signal handling
+onEventOccured : {
+    width = width * 2
+}
+
+signal buttonClicked(Position clickPosition) // note that signals can also take parameters
+
+onButtonClicked : {
+    // oh no. Is this a javascript
+    console.log("x: " + clickPosition.x + " y: " + clickPosition.y)
+}
 ```
 A signal is associated with each porperty of every QtQuick component. That
 means we could implement handlers for `onWidthChanged`, `onColorChnaged`,
@@ -277,17 +277,17 @@ An anchor is an attribute that lets you place components relatively to each
 other without much struggle. They let you turn a sentence like "above the
 status bar, below the menu" into understandable code.
 ```qml
-    // tie this component's bottom to the statusbar's top
-    anchors.bottom: statusBar.top 
-    
-    // tie this component's top to the menubar's bottom
-    anchors.top: menuBar.bottom
-    
-    
-    // make the component fill its parent size
-    anchors.fill: parent
-    
-    // centerIn, left and right are other elements that can be used to anchor stuff
+// tie this component's bottom to the statusbar's top
+anchors.bottom: statusBar.top 
+
+// tie this component's top to the menubar's bottom
+anchors.top: menuBar.bottom
+
+
+// make the component fill its parent size
+anchors.fill: parent
+
+// centerIn, left and right are other elements that can be used to anchor stuff
 ```
 Note that anchors you can only anchor components to their siblings and
 parents.
@@ -302,14 +302,14 @@ can be intercepted.  Typically it's declared inside another component that it
 fills completely and when the user interact with the said component through
 the mouse, those events are available to do awesome stuff.
 ```qml
-    Rectangle {
-        MouseArea {
-            anchors.fill: parent
-            onClicked: {
-                parent.color: "#e3c003"
-            }
+Rectangle {
+    MouseArea {
+        anchors.fill: parent
+        onClicked: {
+            parent.color: "#e3c003"
         }
     }
+}
 ```
 
 <a id="org32b8cc9"></a>
@@ -350,53 +350,52 @@ implementation.
 
 ## Solution
 ```qml
-    import QtQuick 2.9
-    
-    // let's start with a rectangle; almost always start with a rectangle tbh
-    Rectangle {
-        id: button
-    
-        signal clicked // we will trigger this signal when the button is clicked
-    
-        // when the signal is triggered, we'll toggle the color
-        onClicked: {
-            // Qt.colorEqual is used to compare colors
-            // btw you can specify colors in many formats
-            // e.g: "blue", "#0000ff", "#ff0000ff" and many more
-            // including hsv and hsl
-            // here we use strings
-            color =  Qt.colorEqual(color, "blue") ? "red" : "blue"
-        }
-    
-        width: 50
-        height: width
-        radius: width / 2 // make the rectangle a circle
-    
-        color: "blue"
-        border.color: "green"
-    
-        border.width: {
-            // pressed is a read-only boolean property of MouseArea
-            mouseArea.pressed ? 0 : 5
-        }
-    
-        Text {
-            id: label
-    
-            anchors.centerIn: parent
-            color: "white"
-            text: "Hello, world!"
-        }
-    
-        MouseArea {
-            id: mouseArea
-            anchors.fill: parent
-    
-            // note that clicked() is a function call
-            // the parentheses are necessary
-            onClicked: button.clicked()
-        }
+import QtQuick 2.9
+
+// let's start with a rectangle; almost always start with a rectangle tbh
+Rectangle {
+    id: button
+
+    signal clicked // we will trigger this signal when the button is clicked
+
+    // when the signal is triggered, we'll toggle the color
+    onClicked: {
+        // Qt.colorEqual is used to compare colors
+        // btw you can specify colors in many formats
+        // e.g: "blue", "#0000ff", "#ff0000ff" and many more
+        // including hsv and hsl
+        // here we use strings
+        color =  Qt.colorEqual(color, "blue") ? "red" : "blue"
     }
+
+    width: 50
+    height: width
+    radius: width / 2 // make the rectangle a circle
+
+    color: "blue"
+    border.color: "green"
+
+    border.width: {
+        // pressed is a read-only boolean property of MouseArea
+        mouseArea.pressed ? 0 : 5
+    }
+
+    Text {
+        id: label
+
+        anchors.centerIn: parent
+        color: "white"
+        text: "Hello, world!"
+    }
+
+    MouseArea {
+        id: mouseArea
+        anchors.fill: parent
+
+        // note that clicked() is a function call
+        // the parentheses are necessary
+        onClicked: button.clicked()
+    }
+}
 ```
 Now that you're initiated to QtQuick, the electron fanboys better watch out.
-
