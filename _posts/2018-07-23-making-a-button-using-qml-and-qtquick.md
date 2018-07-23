@@ -105,14 +105,14 @@ anything between 2.0 and the latest version available to you. Just don't use
 
 In a qml file you have the import statements at the top and below them a single
 top level qml component.
-
+```qml
     // file.qml
     import QtQuick 2.9
     
     Rectangle {
     // everything else goes here
     }
-
+```
 The `Rectangle` is the most basic *visual* component of QtQuick. It's a
 rectangle with usual properties like, x, y, width, height, and also things
 like a radius, a color, and so on.
@@ -128,7 +128,7 @@ everywhere in the file. This allows you to use the component anywhere within
 the file without trouble. In C++ you would declare a variable with `Rectangle
    rect(0, 0, 12, 12);` for a square of height 12 placed at position (0, 0). In
 QML you'd write the same as follows:
-
+```qml
     Rectangle {
         id: square // no semicolons needed
         x: 0, y: 0 // it's recommended to declare related properties on the same line
@@ -137,7 +137,7 @@ QML you'd write the same as follows:
     
         color: "lightblue"
     }
-
+```
 Some other properties that are available in a rectangle are `border`,
 `gradient`, `opacity`, `visible`, and much [more](https://doc.qt.io/qt-5/qml-qtquick-rectangle-members.html).
 
@@ -150,7 +150,7 @@ Although the `id` looks like one, it's [not a real property](https://doc.qt.io/q
 
 You can also nest elements. This is very useful when you want to create
 somewhat complex components, both in look and behaviour:
-
+```qml
     Rectangle {
        id: square
        ...
@@ -167,7 +167,7 @@ somewhat complex components, both in look and behaviour:
        }
     }
 
-
+```
 <a id="org6b21b1b"></a>
 
 ## Children and parents
@@ -175,7 +175,7 @@ somewhat complex components, both in look and behaviour:
 When a component is nested inside another one, the child can access its
 parent's attributes through the `parent` attribute. The parent can access its
 children's through the `children` attribute, which is a list.
-
+```qml
     Rectangle {
         id: box
         ...
@@ -188,7 +188,7 @@ children's through the `children` attribute, which is a list.
         }
     }
 
-
+```
 <a id="org3e524f8"></a>
 
 ## Reactive programming or property binding
@@ -205,7 +205,7 @@ former using the later, as we've been doing for the `height` property.
 height is appropriately updated, so the rectangle is always a square. With
 that in mind we can redefine our two rectangles to get even better
 reactivity and keep the inner box centered at all times.
-
+```qml
     Rectangle {
        // nothing to change
        Rectangle {
@@ -218,7 +218,7 @@ reactivity and keep the inner box centered at all times.
            ...
        }
     }
-
+```
 
 <a id="org453cbe4"></a>
 
@@ -247,7 +247,7 @@ new property doesn't have to be initialized immediately.
 In the Qt framework, a signal is a predefined message an object sends when a
 certain event occurs. They are an indispensable functionality for any
 respectable gui framework, under some form or another.
-
+```qml
     signal eventOccured // signal declaration
     
     // signal handling
@@ -261,7 +261,7 @@ respectable gui framework, under some form or another.
         // oh no. Is this a javascript
         console.log("x: " + clickPosition.x + " y: " + clickPosition.y)
     }
-
+```
 A signal is associated with each porperty of every QtQuick component. That
 means we could implement handlers for `onWidthChanged`, `onColorChnaged`,
 `onRadiusChanged`, etc. This also applies for our own properties. So we
@@ -276,7 +276,7 @@ previously.
 An anchor is an attribute that lets you place components relatively to each
 other without much struggle. They let you turn a sentence like "above the
 status bar, below the menu" into understandable code.
-
+```qml
     // tie this component's bottom to the statusbar's top
     anchors.bottom: statusBar.top 
     
@@ -288,7 +288,7 @@ status bar, below the menu" into understandable code.
     anchors.fill: parent
     
     // centerIn, left and right are other elements that can be used to anchor stuff
-
+```
 Note that anchors you can only anchor components to their siblings and
 parents.
 
@@ -301,7 +301,7 @@ The mouse area is a basic component that defines an area where mouse events
 can be intercepted.  Typically it's declared inside another component that it
 fills completely and when the user interact with the said component through
 the mouse, those events are available to do awesome stuff.
-
+```qml
     Rectangle {
         MouseArea {
             anchors.fill: parent
@@ -310,7 +310,7 @@ the mouse, those events are available to do awesome stuff.
             }
         }
     }
-
+```
 
 <a id="org32b8cc9"></a>
 
@@ -349,7 +349,7 @@ implementation.
 <a id="orgcdd9e47"></a>
 
 ## Solution
-
+```qml
     import QtQuick 2.9
     
     // let's start with a rectangle; almost always start with a rectangle tbh
@@ -397,6 +397,6 @@ implementation.
             onClicked: button.clicked()
         }
     }
-
+```
 Now that you're initiated to QtQuick, the electron fanboys better watch out.
 
