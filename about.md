@@ -21,7 +21,7 @@ You can read RPL as __err-p-ell__ or __rant, pretend, learn__. Up to you buddy.
 
 - Gitlab: [Hantz V](https://gitlab.com/hantz)
 - GitHub: [nhatzHK](https://github.com/nhatzHK)
-- Twitter: [NhatzHk](https://twitter.com/NhatzHk)
+- Twitter: [errpell](https://twitter.com/errpell)
 - Linkedin: [Hantz](https://www.linkedin.com/in/hantzv/)
 - email: errpell at pm dot me
 - gpg: [8F2A0A7E](http://keys.gnupg.net/pks/lookup?op=vindex&fingerprint=on&search=0x29CA00168F2A047E)
