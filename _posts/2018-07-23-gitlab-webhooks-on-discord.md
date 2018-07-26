@@ -1,3 +1,9 @@
+---
+layout: post
+title: "Gitlab Webhooks on dicord"
+categories: guide
+tags: programming
+---
 
 # Table of Contents
 

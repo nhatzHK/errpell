@@ -1,3 +1,10 @@
+---
+layout: post
+title: "How to exit Vim"
+categories: guide
+tags: programming
+---
+
 - [Mashing keys (because why not)](#mashing-keys-because-why-not)
   - [Simple exit](#simple-exit)
   - [E37: No write since last change (add ! to override)](#e37-no-write-since-last-change-add-to-override)
