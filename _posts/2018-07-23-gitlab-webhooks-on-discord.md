@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Gitlab Webhooks on dicord"
-categories: guide
+category: guide
 tags: programming
 ---
 
