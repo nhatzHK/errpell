@@ -24,6 +24,7 @@ twitter_username: errpell
 github_username:  nhatzHK
 
 show_excerpts: true
+excerpt_separator: <!--more-->
 
 # Build settings
 markdown: kramdown
