@@ -1,9 +1,8 @@
 ---
-layout: page
+layout: default
 ---
 
 {%- if site.categories[page.category].size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Guides" }}</h2>
     <ul class="post-list">
     {% for post in site.categories[page.category] %}
     <li>
