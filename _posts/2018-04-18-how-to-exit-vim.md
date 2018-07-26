@@ -6,6 +6,7 @@ tags: programming
 ---
 
 Quit vim one way or another.
+
 First published [here](https://programming.im/guides/7) on July 8, 2018.
 <!--more-->
 
