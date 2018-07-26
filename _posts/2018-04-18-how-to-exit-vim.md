@@ -5,6 +5,10 @@ category: guide
 tags: programming
 ---
 
+Quit vim one way or another.
+First published [here](https://programming.im/guides/7) on July 8, 2018.
+<!--more-->
+
 - [Mashing keys (because why not)](#mashing-keys-because-why-not)
   - [Simple exit](#simple-exit)
   - [E37: No write since last change (add ! to override)](#e37-no-write-since-last-change-add-to-override)

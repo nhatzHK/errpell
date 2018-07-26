@@ -5,6 +5,10 @@ category: guide
 tags: programming
 ---
 
+Getting started with QML and Qt Quick
+First published [here](https://programming.im/guides/16) on July 8, 2018.
+<!--more-->
+
 # Table of Contents
 
 1.  [Introduction](#org1da39c4)
@@ -29,7 +33,6 @@ tags: programming
     2.  [Additional information](#org307b60f)
     3.  [Solution](#orgcdd9e47)
 
-First published [here](https://programming.im/guides/16) on July 8, 2018.
 
 
 <a id="org1da39c4"></a>
