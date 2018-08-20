@@ -20,8 +20,12 @@ description: >- # this means to ignore newlines until "baseurl:"
   Rants and pretends to know stuff.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://errpell.me" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: errpell
 github_username:  nhatzHK
+mastodon:
+    - username: errpell
+      instance: mastodon.technology
+    - username: errpell
+      instance: mastodon.social
 
 show_excerpts: true
 excerpt_separator: <!--more-->
