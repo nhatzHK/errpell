@@ -25,7 +25,7 @@ Improving the situation of the most vulnerable people on the planet is a key
 aspect of my life project. The paths I take (or intend to take) working toward
 that goal comprise comprise improvement of human-computer interaction; improvement of
 accessibility, portability and reusability of knowledge as well as volunteer
-work on projects and in community that I care about.
+work on projects and in communities that I care about.
 
 This is where I rant, and pretend to know stuff. Welcome to my Ted Talk.
 
