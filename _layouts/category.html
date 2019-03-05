@@ -10,16 +10,16 @@ layout: default
         <h4>
             <a class="post-link" href="{{ post.url | relative_url }}">
                 {{ post.title | escape }}
-            </a>
-        </h4>
+            </a><br/>
+        </h4><br/>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">
             {{ post.date | date: date_format }}<br/>
             {%- if site.show_excerpts -%}
                 {{ post.excerpt }}
             {%- endif -%}
-        </span>
-    </li>
+        </span><br/>
+    </li><br/>
     {% endfor %}
     </ul>
 {%- endif -%}
