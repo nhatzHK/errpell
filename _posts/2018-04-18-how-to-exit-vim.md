@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to exit Vim"
-category: guide
+category: blog
 tags: programming
 ---
 Quit vim one way or another.

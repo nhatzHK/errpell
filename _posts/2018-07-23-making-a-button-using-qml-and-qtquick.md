@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Making a button using QML and QtQuick"
-category: guide
+category: blog
 tags: programming
 ---
 
