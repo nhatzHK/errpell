@@ -17,7 +17,7 @@ layout: default
             {%- if site.show_excerpts -%}
                 {{ post.excerpt }}
             {%- endif -%}
-            {{ post.date | date: date_format }}
+            <br/>{{ post.date | date: date_format }}
         </span>
     </li>
     {% endfor %}
