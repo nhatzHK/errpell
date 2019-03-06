@@ -5,7 +5,7 @@ category: blog
 tags: programming
 ---
 
-Getting started with QML and Qt Quick
+Getting started with QML and Qt Quick\
 First published [here](https://programming.im/guides/16) on July 8, 2018.
 <!--more-->
 
