@@ -14,12 +14,10 @@ layout: default
             </a>
         </strong>
         <span class="post-meta">
+            {{ post.date | date: date_format }}
             {%- if site.show_excerpts -%}
                 {{ post.excerpt }}
             {%- endif -%}
-        </span>
-        <span class="post-meta">
-            {{ post.date | date: date_format }}
         </span>
     </li>
     {% endfor %}
