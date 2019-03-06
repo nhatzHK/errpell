@@ -6,7 +6,7 @@ tags: programming
 ---
 
 #movingtogitlab:tm:<br/>
-First published [here](https://programming.im/guides/14) on June 10, 2018.
+<small>First published [here](https://programming.im/guides/14) on June 10, 2018.</small>
 <!--more-->
 
 Everyone is [#movingtogitLab](https://about.gitlab.com/2018/06/03/movingtogitlab/), and no matter what Microsoft fan boys tell you,

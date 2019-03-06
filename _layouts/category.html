@@ -7,15 +7,13 @@ layout: default
     <ul class="post-list">
     {% for post in site.categories[page.category] %}
     <li>
-        <h6>
-        </h6>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">
-            <strong><u>
+            <strong>
                 <a class="post-link" href="{{ post.url | relative_url }}">
                 {{ post.title | escape }}
                 </a>
-            </u></strong>
+            </strong>
             {{ post.date | date: date_format }}<br/>
             {%- if site.show_excerpts -%}
                 {{ post.excerpt }}

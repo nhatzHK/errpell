@@ -6,7 +6,8 @@ tags: programming
 ---
 
 Getting started with QML and Qt Quick<br/>
-First published [here](https://programming.im/guides/16) on July 8, 2018.
+<small>First published [here](https://programming.im/guides/16) on July 8,
+2018.</small>
 <!--more-->
 
 # Table of Contents
