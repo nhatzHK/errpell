@@ -13,10 +13,8 @@ layout: default
                  {{ post.title | escape }}
             </a>
         </strong>
-        <span class="post-meta">
-            {{ post.date | date: date_format }}
-        </span>
         <p class="post-meta">
+            <small>{{ post.date | date: date_format }}</small>
             {%- if site.show_excerpts -%}
                 {{ post.excerpt }}
             {%- endif -%}
