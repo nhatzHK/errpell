@@ -13,12 +13,12 @@ layout: default
                  {{ post.title | escape }}
             </a>
         </strong>
-        <p class="post-meta">
+        <span class="post-meta">
             {%- if site.show_excerpts -%}
                 {{ post.excerpt }}
             {%- endif -%}
             {{ post.date | date: date_format }}
-        </p>
+        </span>
     </li>
     {% endfor %}
     </ul>
