@@ -14,7 +14,7 @@ layout: default
             </a>
         </strong>
         <p class="post-meta">
-            <small>{{ post.date | date: date_format }}</small>
+            {{ post.date | date: date_format }}
             {%- if site.show_excerpts -%}
                 {{ post.excerpt }}
             {%- endif -%}
