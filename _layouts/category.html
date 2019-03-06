@@ -8,23 +8,21 @@ layout: default
     {% for post in site.categories[page.category] %}
     <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">
-            <strong>
-                <a class="post-link" href="{{ post.url | relative_url }}">
-                {{ post.title | escape }}
-                </a>
-            </strong>
+        <strong>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+                 {{ post.title | escape }}
+            </a>
+        </strong>
+        <p class="post-meta">
             <!--
             <span>
             {{ post.date | date: date_format }}
             </span>
             -->
-            <p>
             {%- if site.show_excerpts -%}
                 {{ post.excerpt }}
             {%- endif -%}
-            </p>
-        </span>
+        </p>
     </li>
     {% endfor %}
     </ul>
