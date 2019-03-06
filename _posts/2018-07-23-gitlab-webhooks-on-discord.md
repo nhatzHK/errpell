@@ -5,7 +5,7 @@ category: blog
 tags: programming
 ---
 
-#movingtogitlab:tm:\
+#movingtogitlab:tm:<br/>
 First published [here](https://programming.im/guides/14) on June 10, 2018.
 <!--more-->
 
