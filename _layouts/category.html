@@ -14,9 +14,11 @@ layout: default
                 {{ post.title | escape }}
                 </a>
             </strong>
+            <!--
             <span>
             {{ post.date | date: date_format }}
             </span>
+            -->
             <p>
             {%- if site.show_excerpts -%}
                 {{ post.excerpt }}
