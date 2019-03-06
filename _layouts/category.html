@@ -19,10 +19,12 @@ layout: default
             {{ post.date | date: date_format }}
             </span>
             -->
+        </span>
+        <p class="post-meta">
             {%- if site.show_excerpts -%}
                 {{ post.excerpt }}
             {%- endif -%}
-        </span>
+        </p>
     </li>
     {% endfor %}
     </ul>
