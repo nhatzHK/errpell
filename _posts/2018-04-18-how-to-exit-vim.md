@@ -5,7 +5,6 @@ category: blog
 tags: programming
 ---
 Quit vim one way or another.
-
 First published [here](https://programming.im/guides/7) on April 15, 2018.
 <!--more-->
 
