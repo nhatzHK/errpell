@@ -17,9 +17,11 @@ layout: default
             <span>
             {{ post.date | date: date_format }}
             </span>
+            <p>
             {%- if site.show_excerpts -%}
                 {{ post.excerpt }}
             {%- endif -%}
+            </p>
         </span>
     </li>
     {% endfor %}
