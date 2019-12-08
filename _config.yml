@@ -24,8 +24,6 @@ github_username:  nhatzHK
 mastodon:
     - username: errpell
       instance: mastodon.technology
-    - username: errpell
-      instance: mastodon.social
 
 show_excerpts: true
 excerpt_separator: <!--more-->
