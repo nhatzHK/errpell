@@ -5,28 +5,46 @@ title: About me
 
 ### Me
 
-Hi, I'm `Hantz`. I'm a Computer Engineering undergraduate at
-[UdeS](https://www.usherbrooke.ca/about/). 
+Hi, I'm `Hantz (errpell)`. I'm a Computer Engineering undergraduate at
+[UdeS](https://www.usherbrooke.ca/about/). I am from Haiti and currently live in
+Montréal.
 
-I enjoy embedded, desktop as well as graphic applications development using
-C++, Python and Java. I'm also interested in languages with interesting design
-decisions like D-lang, Perl and Lisp(s).
+I see programming as the main tool I can currently use to realize my ideas. I
+enjoy developing software with a variety of platforms and languages.
 
-I know my way around a Unix like environment and I'm comfortable using established
-dev tools like Git and Bash in my workflow. I enjoy working on open platforms
-and care deeply about FLOSS.
+I use C++, Python, and Java to concretize my ideas. I'm also interested in
+languages that present programming from a completely new angle. Among those are
+D-Lang, Perl and Lisp(s).
 
-I spend my free time reading Orwell, watching Villeneuve's, participating in
-GameJams and Hackathons when I'm not creating or improving the tools I find
-useful. I also try to write.
+I know my way around a Unix like environment. I prefer using Linux on my main
+computer. I'm comfortable using established development tools like Git and Bash
+in my workflow. I prefer working on open platforms and care about Free Libre and
+Open Source Software.
 
-Improving the situation of the most vulnerable people on the planet is a key
-aspect of my life project. The paths I take (or intend to take) working toward
-that goal comprise comprise improvement of human-computer interaction; improvement of
-accessibility, portability and reusability of knowledge as well as volunteer
-work on projects and in communities that I care about.
+I take part in Game-jams and Hackathons when possible. I otherwise spend my free
+time creating or improving the tools I find useful. I'm open to contribute to
+the development of new ones.
 
-This is where I rant, and pretend to know stuff. Welcome to my Ted Talk.
+I am an avid reader. I consume media from various genres and periods. The works
+of Jacques Roumain, Rohinton Mistry, and Denis Villeneuve, to cite a few, have
+moved me.
+
+I also try to write. I have a few unpublished short works of fiction. I keep my
+analysis and commentaries on various events in writing. I also enjoy blogging
+about the technologies that I find exciting. I have published and will continue
+to make some of those texts available here.
+
+I am a self-described Marxist. Marxism offers the most comprehensive method for
+analyzing and solving today's problems.
+
+Vulnerable people on the planet are those who matter the most to me. Improving
+their situation is a key aspect of my life project. I will use technical and
+societal means to enact lasting change in their lives, from many fronts. Those
+include improvements in human-computer interactions; and accessibility,
+portability, and re-usability of knowledge.
+
+I am available to discuss any topic over email. This is where I rant and pretend
+to know stuff. Welcome to my Ted Talk.
 
 
 ### Social & Contact
@@ -35,5 +53,5 @@ This is where I rant, and pretend to know stuff. Welcome to my Ted Talk.
 - GitHub: [nhatzHK](https://github.com/nhatzHK)
 - Twitter: [errpell](https://twitter.com/errpell)
 - Linkedin: [Hantz](https://www.linkedin.com/in/hantzv/)
-- email: errpell at pm dot me
+- email: vhantz at pm dot me
 - gpg: [8F2A0A7E](http://keys.gnupg.net/pks/lookup?op=vindex&fingerprint=on&search=0x29CA00168F2A047E)
