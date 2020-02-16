@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Gitlab Webhooks on dicord"
+title: "Gitlab Webhooks on discord"
 category: blog
 tags: programming
 ---

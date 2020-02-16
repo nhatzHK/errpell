@@ -3,7 +3,7 @@ layout: page
 title: Apwopo de mwen
 ---
 
-### Me
+### Mwen
 
 Alo, mwen se `Hantz (errpell)`. Mwen se yon etidyan nan Jeni Enfòmatik nan 
 [UdeS](https://www.usherbrooke.ca/about/). Mwen soti Ayiti epi kounya map viv Monreyal.
@@ -45,7 +45,7 @@ konnen bagay. Welcome to my Ted Talk.
 
 - Gitlab: [Hantz V](https://gitlab.com/hantz)
 - GitHub: [nhatzHK](https://github.com/nhatzHK)
-- Twitter: [errpell](https://twitter.com/errpell)
+- Twitter: [errpell](https://twitter.com/HantzKali)
 - Linkedin: [Hantz](https://www.linkedin.com/in/hantzv/)
 - email: vhantz at pm dot me
 - gpg: [8F2A0A7E](http://keys.gnupg.net/pks/lookup?op=vindex&fingerprint=on&search=0x29CA00168F2A047E)
