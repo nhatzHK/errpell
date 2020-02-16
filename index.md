@@ -1,53 +1,47 @@
 ---
 layout: page
-title: About me
+title: Apwopo de mwen
 ---
 
 ### Me
 
-Hi, I'm `Hantz (errpell)`. I'm a Computer Engineering undergraduate at
-[UdeS](https://www.usherbrooke.ca/about/). I am from Haiti and currently live in
-Montréal.
+Alo, mwen se `Hantz (errpell)`. Mwen se yon etidyan nan Jeni Enfòmatik nan 
+[UdeS](https://www.usherbrooke.ca/about/). Mwen soti Ayiti epi kounya map viv Monreyal.
 
-I see programming as the main tool I can currently use to realize my ideas. I
-enjoy developing software with a variety of platforms and languages.
+Mwen konsidere pwogramasyon kòm zouti prensipal mwen ka itilize nan moman an poum reyalize
+lide mwen yo. Mwen fè devlopman lojisyèl nan plizyè langaj.
 
-I use C++, Python, and Java to concretize my ideas. I'm also interested in
-languages that present programming from a completely new angle. Among those are
-D-Lang, Perl and Lisp(s).
+Mwen itilize C++, Python avèk Java poum konkretize lidem yo. Mwen enterese nan langaj ki
+apwoche pwogramasyon avèk yon nouvèl pèspketiv. Pami langaj sa yo genyen D-lang, Perl avèk
+Lisp yo.
 
-I know my way around a Unix like environment. I prefer using Linux on my main
-computer. I'm comfortable using established development tools like Git and Bash
-in my workflow. I prefer working on open platforms and care about Free Libre and
-Open Source Software.
+Mwen alèz sou yon anviwonnman Unix. Mwen prefere itilize Lunix sou odinatè prensipal mwen
+an. Mwen alèz avèk zouti devlopman lojisyèl  byen etabli tankou Git avèk Bash. Mwen pi
+renmen travay sou platfòm ki ouvè epi m sousye de Lojisyèl Gratis Lib e Sous Ouvè. 
 
-I take part in Game-jams and Hackathons when possible. I otherwise spend my free
-time creating or improving the tools I find useful. I'm open to contribute to
-the development of new ones.
+Mwen patisipe nan Game-jam avèk Hackathon lèm kapab, Sinon mwen pase tan lib mwen ap
+kreye oubyen amelyore zouti mwen trouve itil yo. Mwen ouvè a ede nan devlòman nouvo
+zouti.
 
-I am an avid reader. I consume media from various genres and periods. The works
-of Jacques Roumain, Rohinton Mistry, and Denis Villeneuve, to cite a few, have
-moved me.
+Mwen se yon gwo lektè. Mwen konsome medya nan plizyè estil ak peryòd. Jis pou site kèk
+green, travay Jacques Roumain, Rohinton Mistry, avèk Denis Villeneuve makem.
 
-I also try to write. I have a few unpublished short works of fiction. I keep my
-analysis and commentaries on various events in writing. I also enjoy blogging
-about the technologies that I find exciting. I have published and will continue
-to make some of those texts available here.
+Mwen eseye ekri tou. Mwen genyen kèk tèks fiksyon ki pako pibliye. Mwen konsève analiz avèk 
+kòmantè mwen fè sou diferan sijè alekri. Mwen renmen bloge sou teknoloji mwen twouve eksitan
+tou. Map kontinye pibliye kèk nan tèks sa yo la.
 
-I am a self-described Marxist. Marxism offers the most comprehensive method for
-analyzing and solving today's problems.
+Mwen dekri tèt mwen kòm yon Maksis. Maksis ofri metòd ki pi konplè pou analize epi rezoud 
+pwoblèm nap fè fas jounen jodia.
 
-Vulnerable people on the planet are those who matter the most to me. Improving
-their situation is a key aspect of my life project. I will use technical and
-societal means to enact lasting change in their lives, from many fronts. Those
-include improvements in human-computer interactions; and accessibility,
-portability, and re-usability of knowledge.
+Popilasyon vilnerab sou planèt la se sa ki plis enpòtan pou mwen. Amelyore vi yo se premye
+aspè nan pwojè lavim. Map itilize mwayen teknik e sosyal poum kreye chanjman sou plizyè 
+fwon, prensipalman nan amelyorasyon entèfas entèraksyon moun-machin, avèk aksesibilite,
+transparans avèk re-itilizayon konesans.
 
-I am available to discuss any topic over email. This is where I rant and pretend
-to know stuff. Welcome to my Ted Talk.
+Mwen disponib pou diskite nenpòt sijè pa imèl. La se kotem radote epi pretann mwen
+konnen bagay. Welcome to my Ted Talk.
 
-
-### Social & Contact
+### Kontak
 
 - Gitlab: [Hantz V](https://gitlab.com/hantz)
 - GitHub: [nhatzHK](https://github.com/nhatzHK)
